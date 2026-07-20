@@ -1,0 +1,252 @@
+/* .hero{
+
+    height:100vh;
+
+    background-image:url('/backimg.png');
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+ 
+
+}
+
+.navbar{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:25px 0;
+
+    z-index:1000;
+
+}
+
+
+.nav-link{
+
+    color:white;
+
+    font-size:15px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-weight:bold;
+
+}
+
+.nav-link:hover{
+
+    color:#ddd;
+
+}
+
+
+.navbar-brand{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:58px;
+
+    letter-spacing:8px;
+
+    color:#9d2d33;
+
+    font-weight:300;
+
+}
+
+
+.icons{
+
+    color:white;
+
+    font-size:22px;
+
+    margin-left:auto;
+
+}
+
+.icons i{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.icons i:hover{
+
+    transform:scale(1.2);
+
+} */
+
+
+
+.hero {
+    height: 100vh;
+    background-image: url('/backimg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* For the luxury nav/action items */
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: white !important; /* Ensures bootstrap override */
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0;
+    z-index: 1000;
+}
+
+.nav-link:hover {
+    color: #ddd !important;
+}
+
+/* Absolute center layout for desktop */
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 58px;
+    letter-spacing: 8px;
+    font-weight: 300;
+    margin-right: 0;
+}
+
+.icons {
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+}
+
+/* White custom styled Hamburger icon line borders */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    padding: 4px 8px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Hero Content Core Layout */
+.hero-content {
+    color: #fff;
+    max-width: 480px;
+    margin-top: 60px; /* Avoid overlaying the navbar menu on mobile */
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.divider {
+    width: 90px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255,255,255,.9);
+    margin-bottom: 40px;
+}
+
+.discover-btn {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.discover-btn:hover {
+    color: #d9d9d9;
+}
+
+/* ==========================================================================
+   Mobile & Tablet Responsive Adaptations 
+   ========================================================================== */
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 15px 0;
+    }
+    
+    /* Re-adjust the absolute center positioning to look clean next to hamburger toggles */
+    .navbar-brand {
+        font-size: 32px !important;
+        letter-spacing: 4px;
+        left: 50%;
+    }
+    
+    /* Custom spacing and background fill for mobile open-dropdown menu items */
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(8px);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+
+    .icons {
+        font-size: 18px;
+        gap: 3px !important; 
+    }
+
+    /* Scaling down typography gracefully for smaller screens */
+    .hero-content h1 {
+        font-size: 3.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-content p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+}

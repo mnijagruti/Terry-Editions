@@ -1,0 +1,157 @@
+.hero{
+
+    height:100vh;
+
+    background-image:url('/backimg.png');
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+    /* opacity: 0.9; */
+
+}
+/* For the luxury nav/action items */
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+}
+
+
+nav-link{
+      font-family: 'Cormorant Garamond', serif;
+  font-weight: 0;
+  /* color: #f4f4f2; */
+  /* color: #f4f4f2f3; */
+  color:#c1bcb6;
+
+}
+
+
+.nav-link{
+
+    color:white;
+
+    font-size:15px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    /* font-weight:bold; */
+
+}
+.navbar{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:25px 0;
+
+    z-index:1000;
+
+}
+
+
+
+.nav-link:hover{
+
+    color:#ddd;
+
+}
+
+
+.navbar-brand{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:58px;
+
+    letter-spacing:8px;
+
+    color:#9d2d33;
+
+    font-weight:300;
+
+}
+
+
+.icons{
+
+    color:white;
+
+    font-size:22px;
+
+    margin-left:auto;
+
+}
+
+.icons i{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.icons i:hover{
+
+    transform:scale(1.2);
+
+}
+
+
+
+.hero-content {
+    color: #fff;
+    max-width: 480px;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: "Cormorant Garamond", serif;
+}
+
+.divider {
+    width: 90px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255,255,255,.9);
+    margin-bottom: 40px;
+}
+
+.discover-btn {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.discover-btn:hover {
+    color: #d9d9d9;
+}
