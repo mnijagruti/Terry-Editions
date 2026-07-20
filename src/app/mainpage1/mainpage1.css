@@ -1,0 +1,83 @@
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+
+.custom-navbar{
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:transparent !important;
+    padding:25px 50px;
+}
+
+/* Menu */
+
+.custom-navbar .nav-link{
+    /* color:#fff; */
+    color:black;
+
+    font-size:14px;
+    letter-spacing:3px;
+    font-weight:300;
+    text-transform:uppercase;
+    transition:.3s;
+}
+
+.custom-navbar .nav-link:hover{
+    color:#d7b07b;
+}
+
+/* Logo */
+
+.logo{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    color:#a32b2b !important;
+    font-size:52px;
+    font-family:serif;
+    letter-spacing:6px;
+}
+
+/* Icons */
+
+.icon{
+    color:black;
+    font-size:22px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.icon:hover{
+    color:#d7b07b;
+}
+
+.navbar-toggler{
+    filter: invert(1);
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+.logo{
+    position:static;
+    transform:none;
+    font-size:35px;
+}
+
+.custom-navbar{
+    background:#111 !important;
+    padding:15px;
+}
+
+.custom-navbar .navbar-collapse{
+    margin-top:20px;
+}
+
+}

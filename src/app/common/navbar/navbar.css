@@ -111,7 +111,7 @@
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 15px;
+    font-size: 13px;
     color: white !important; /* Ensures bootstrap override */
 }
 
@@ -232,11 +232,12 @@
         padding: 20px;
         border-radius: 4px;
         margin-top: 10px;
+        height: 100vh;
     }
 
     .icons {
         font-size: 18px;
-        gap: 3px !important; 
+        gap: 10px !important; 
     }
 
     /* Scaling down typography gracefully for smaller screens */
